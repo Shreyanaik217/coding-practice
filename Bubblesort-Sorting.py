@@ -1,3 +1,6 @@
+#bubble sort using pointers
+
+
 def bubbleSort(arr):
     n = len(arr)
     swapped = False
