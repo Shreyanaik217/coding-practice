@@ -1,5 +1,5 @@
 #pass the array to the function using pointer
-
+#find the sum of thr given array using pointer
 def array_sum(arr):
     result = 0
     for i in arr:
