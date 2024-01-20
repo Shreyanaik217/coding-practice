@@ -1,3 +1,6 @@
+#check the number is of opposite sign or not based on the bit values
+#bit manipulation
+
 def have_opposite_signs(x, y):
     return (x ^ y) < 0
 
