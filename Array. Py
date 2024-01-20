@@ -1,0 +1,20 @@
+def find_missing_number(arr):
+    n = len(arr) + 1  # The array should have n+1 elements for numbers 1 to n
+
+    # Calculate the sum of all numbers from 1 to n using the formula n * (n + 1) / 2
+    expected_sum = n * (n + 1) // 2
+
+    # Calculate the actual sum of the elements in the array
+    actual_sum = 0
+    for num in arr:
+        actual_sum += num
+
+    # The difference between the expected sum and actual sum is the missing number
+    missing_number = expected_sum - actual_sum
+
+    return missing_number
+
+
+arr = [1, 2, 4, 5, 6, 7, 8]
+result = find_missing_number(arr)
+print("Missing number:", result)
